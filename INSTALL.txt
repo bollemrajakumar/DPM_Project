@@ -1,0 +1,42 @@
+FabStudio – Virtual Try-On (test build 0.1.0)
+===========================================
+
+Try clothes on yourself with your webcam. Everything runs on your computer;
+no video or photos are uploaded.
+
+INSTALL (Chrome, Edge or another Chromium browser)
+1. Unzip this file to a folder you'll keep (e.g. Documents\FabStudio).
+   Don't delete the folder afterwards: the browser loads the extension from it.
+2. Open chrome://extensions  (Edge: edge://extensions)
+3. Turn on "Developer mode" (top right).
+4. Click "Load unpacked" and choose the unzipped folder: the one that
+   contains manifest.json.
+5. Optional: pin FabStudio from the puzzle-piece icon in the toolbar.
+
+Chrome will say the extension can "read and change all your data on all
+websites". That's only so it can download the product photos you pick.
+
+USE
+1. Click the FabStudio icon. A side panel opens.
+2. Click "Start camera". A tab asks for camera access: click Allow
+   (choose "Allow on every visit" if offered). The tab closes and the
+   camera starts in the panel. The first start downloads the body-tracking
+   models (~40 MB) once.
+3. Add a garment:
+   - on a shopping site, right-click a product photo -> "Try on with FabStudio", or
+   - Garments tab -> "+ Upload garment".
+   Best: a model standing straight facing the camera, or the top alone on a
+   plain background, or a transparent PNG. Tops only (t-shirts, shirts,
+   hoodies, jackets).
+4. Stand 1.5-2.5 m back so your head, shoulders and hips are in view.
+   "Demo" shows a test mannequin without a camera.
+
+KNOWN LIMITS
+- It's a 2D photo warped onto you: no back side, no real 3D draping.
+- The toolbar icon is a grey placeholder "A".
+- Warnings like "INFO: Created TensorFlow Lite XNNPACK delegate" under
+  Errors on the extensions page are normal log messages.
+
+FEEDBACK
+If something goes wrong, send a screenshot of the panel and, if possible,
+right-click the panel -> Inspect -> Console, and copy any red lines.

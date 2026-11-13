@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FabStudio – Allow camera</title>
+  </head>
+  <body>
+    <main class="permission-page">
+      <h1><span class="mark" aria-hidden="true">◐</span> FabStudio needs your camera</h1>
+      <p>
+        Chrome can't ask for camera access inside the side panel, so this tab asks once.
+        After you allow it, the FabStudio panel can use the camera. Video never leaves your device.
+      </p>
+      <p id="status" role="status">Waiting for you to allow the camera…</p>
+      <div class="row">
+        <button id="allow" class="primary">Allow camera</button>
+        <button id="settings" hidden>Open camera settings</button>
+      </div>
+    </main>
+    <script type="module" src="/src/permission.ts"></script>
+  </body>
+</html>
